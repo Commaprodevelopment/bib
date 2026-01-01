@@ -1,0 +1,249 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic:
+    - complementary [ref=e4]:
+      - navigation "Sidepanel" [ref=e5]:
+        - generic [ref=e6]:
+          - link "client brand banner" [ref=e7] [cursor=pointer]:
+            - /url: https://www.orangehrm.com/
+            - img "client brand banner" [ref=e9]
+          - text: 
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - textbox "Tìm kiếm" [ref=e15]
+              - button "" [ref=e16] [cursor=pointer]:
+                - generic [ref=e17]: 
+            - separator [ref=e18]
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "Quản trị viên" [ref=e21] [cursor=pointer]:
+                - /url: /web/index.php/admin/viewAdminModule
+                - generic [ref=e24]: Quản trị viên
+            - listitem [ref=e25]:
+              - link "PIM" [ref=e26] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewPimModule
+                - generic [ref=e40]: PIM
+            - listitem [ref=e41]:
+              - link "Để lại" [ref=e42] [cursor=pointer]:
+                - /url: /web/index.php/leave/viewLeaveModule
+                - generic [ref=e45]: Để lại
+            - listitem [ref=e46]:
+              - link "Thời gian" [ref=e47] [cursor=pointer]:
+                - /url: /web/index.php/time/viewTimeModule
+                - generic [ref=e53]: Thời gian
+            - listitem [ref=e54]:
+              - link "Tuyển dụng" [ref=e55] [cursor=pointer]:
+                - /url: /web/index.php/recruitment/viewRecruitmentModule
+                - generic [ref=e61]: Tuyển dụng
+            - listitem [ref=e62]:
+              - link "Thông tin của tôi" [ref=e63] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewMyDetails
+                - generic [ref=e69]: Thông tin của tôi
+            - listitem [ref=e70]:
+              - link "Hiệu suất" [ref=e71] [cursor=pointer]:
+                - /url: /web/index.php/performance/viewPerformanceModule
+                - generic [ref=e79]: Hiệu suất
+            - listitem [ref=e80]:
+              - link "Dashboard" [ref=e81] [cursor=pointer]:
+                - /url: /web/index.php/dashboard/index
+                - generic [ref=e84]: Dashboard
+            - listitem [ref=e85]:
+              - link "Directory" [ref=e86] [cursor=pointer]:
+                - /url: /web/index.php/directory/viewDirectory
+                - generic [ref=e89]: Directory
+            - listitem [ref=e90]:
+              - link "Maintenance" [ref=e91] [cursor=pointer]:
+                - /url: /web/index.php/maintenance/viewMaintenanceModule
+                - generic [ref=e95]: Maintenance
+            - listitem [ref=e96]:
+              - link "Claim" [ref=e97] [cursor=pointer]:
+                - /url: /web/index.php/claim/viewClaimModule
+                - img [ref=e100]
+                - generic [ref=e104]: Claim
+            - listitem [ref=e105]:
+              - link "Buzz" [ref=e106] [cursor=pointer]:
+                - /url: /web/index.php/buzz/viewBuzz
+                - generic [ref=e109]: Buzz
+    - banner [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - text: 
+          - heading "Dashboard" [level=6] [ref=e114]
+        - link "Upgrade" [ref=e116]:
+          - /url: https://orangehrm.com/open-source/upgrade-to-advanced
+          - button "Upgrade" [ref=e117] [cursor=pointer]: Upgrade
+        - list [ref=e123]:
+          - listitem [ref=e124]:
+            - generic [ref=e125] [cursor=pointer]:
+              - img "profile picture" [ref=e126]
+              - paragraph [ref=e127]: manda user
+              - generic [ref=e128]: 
+      - navigation "Topbar Menu" [ref=e130]:
+        - list [ref=e131]:
+          - button "" [ref=e133] [cursor=pointer]:
+            - generic [ref=e134]: 
+  - generic [ref=e135]:
+    - generic [ref=e137]:
+      - generic [ref=e139]:
+        - generic [ref=e141]:
+          - generic [ref=e142]: 
+          - paragraph [ref=e143]: Time at Work
+        - separator [ref=e144]
+        - generic [ref=e146]:
+          - generic [ref=e147]:
+            - img "profile picture" [ref=e149]
+            - generic [ref=e150]:
+              - paragraph [ref=e151]: Punched Out
+              - paragraph [ref=e152]: "Punched Out: Mar 29th at 01:19 PM (GMT 7)"
+          - generic [ref=e153]:
+            - generic [ref=e154]: 0h 0m Today
+            - button "" [ref=e155] [cursor=pointer]:
+              - generic [ref=e156]: 
+          - separator [ref=e157]
+          - generic [ref=e158]:
+            - generic [ref=e159]:
+              - paragraph [ref=e160]: This Week
+              - paragraph [ref=e161]: Dec 29 - Jan 04
+            - generic [ref=e162]:
+              - generic [ref=e163]: 
+              - paragraph [ref=e164]: 0h 0m
+      - generic [ref=e168]:
+        - generic [ref=e170]:
+          - generic [ref=e171]: 
+          - paragraph [ref=e172]: My Actions
+        - separator [ref=e173]
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - button [ref=e177] [cursor=pointer]
+            - paragraph [ref=e183] [cursor=pointer]: (1) Pending Self Review
+          - generic [ref=e184]:
+            - button [ref=e185] [cursor=pointer]
+            - paragraph [ref=e194] [cursor=pointer]: (1) Candidate to Interview
+      - generic [ref=e196]:
+        - generic [ref=e198]:
+          - generic [ref=e199]: 
+          - paragraph [ref=e200]: Quick Launch
+        - separator [ref=e201]
+        - generic [ref=e203]:
+          - generic [ref=e204]:
+            - button "Chỉ định nghỉ phép" [ref=e205] [cursor=pointer]
+            - generic "Chỉ định nghỉ phép" [ref=e208]:
+              - paragraph [ref=e209]: Chỉ định nghỉ phép
+          - generic [ref=e210]:
+            - button "Để lại Danh sách" [ref=e211] [cursor=pointer]
+            - generic "Để lại Danh sách" [ref=e218]:
+              - paragraph [ref=e219]: Để lại Danh sách
+          - generic [ref=e220]:
+            - button "Timesheets" [ref=e221] [cursor=pointer]
+            - generic "Timesheets" [ref=e227]:
+              - paragraph [ref=e228]: Timesheets
+          - generic [ref=e229]:
+            - button "Áp dụng lại" [ref=e230] [cursor=pointer]
+            - generic "Áp dụng lại" [ref=e233]:
+              - paragraph [ref=e234]: Áp dụng lại
+          - generic [ref=e235]:
+            - button "Leave My" [ref=e236] [cursor=pointer]
+            - generic "Leave My" [ref=e241]:
+              - paragraph [ref=e242]: Leave My
+          - generic [ref=e243]:
+            - button "My Timesheet" [ref=e244] [cursor=pointer]
+            - generic "My Timesheet" [ref=e247]:
+              - paragraph [ref=e248]: My Timesheet
+      - generic [ref=e250]:
+        - generic [ref=e252]:
+          - generic [ref=e253]: 
+          - paragraph [ref=e254]: Buzz Latest Posts
+        - separator [ref=e255]
+        - generic [ref=e257]:
+          - generic [ref=e258]:
+            - generic [ref=e259] [cursor=pointer]:
+              - img "profile picture" [ref=e261]
+              - generic [ref=e262]:
+                - paragraph [ref=e263]: manda akhil user
+                - paragraph [ref=e264]: 2025-31-12 09:32 PM
+            - separator [ref=e265]
+            - paragraph [ref=e266]: Automated post message
+            - img [ref=e267]
+          - generic [ref=e268]:
+            - generic [ref=e269] [cursor=pointer]:
+              - img "profile picture" [ref=e271]
+              - generic [ref=e272]:
+                - paragraph [ref=e273]: manda akhil user
+                - paragraph [ref=e274]: 2020-08-10 09:08 AM
+            - separator [ref=e275]
+            - paragraph [ref=e276]: "Hi All; Linda has been blessed with a baby boy! Linda: With love, we welcome your dear new baby to this world. Congratulations!"
+          - generic [ref=e277]:
+            - generic [ref=e278] [cursor=pointer]:
+              - img "profile picture" [ref=e280]
+              - generic [ref=e281]:
+                - paragraph [ref=e282]: Sania Shaheen
+                - paragraph [ref=e283]: 2020-08-10 09:08 AM
+            - separator [ref=e284]
+            - paragraph [ref=e285]: "World Championship: What makes the perfect snooker player? Mark Selby: Robertson has one of the best techniques in the game. It is very, very straight and he fully commits to every single shot he plays. John Higgins: Every shot is repetitive. He always keeps the same technique and cues through the ball bang straight. Barry Hawkins: Robertson is textbook with his grip and has a ramrod solid cue action, delivering it in a straight line. Honourable mentions: Shaun Murphy, Ding Junhui, Jack Lisowski."
+          - generic [ref=e286]:
+            - generic [ref=e287] [cursor=pointer]:
+              - img "profile picture" [ref=e289]
+              - generic [ref=e290]:
+                - paragraph [ref=e291]: Rebecca Harmony
+                - paragraph [ref=e292]: 2020-08-10 09:04 AM
+            - separator [ref=e293]
+            - paragraph [ref=e294]: Throwback Thursdays!!
+            - img [ref=e295]
+          - generic [ref=e296]:
+            - generic [ref=e297] [cursor=pointer]:
+              - img "profile picture" [ref=e299]
+              - generic [ref=e300]:
+                - paragraph [ref=e301]: Russel Hamilton
+                - paragraph [ref=e302]: 2020-08-10 09:03 AM
+            - separator [ref=e303]
+            - paragraph [ref=e304]: Live SIMPLY Dream BIG Be GREATFULL Give LOVE Laugh LOT.......
+      - generic [ref=e306]:
+        - generic [ref=e307]:
+          - paragraph [ref=e312]: Employees on Leave Today
+          - generic [ref=e313] [cursor=pointer]: 
+        - separator [ref=e314]
+        - generic [ref=e316]:
+          - img "profile picture" [ref=e318]
+          - generic [ref=e319]:
+            - paragraph [ref=e320]: A8DCo 010Z
+            - paragraph [ref=e321]: CAN - Bereavement
+          - paragraph [ref=e322]: "0312"
+      - generic [ref=e324]:
+        - generic [ref=e326]:
+          - generic [ref=e327]: 
+          - paragraph [ref=e328]: Employee Distribution by Sub Unit
+        - separator [ref=e329]
+        - list [ref=e334]:
+          - listitem [ref=e335] [cursor=pointer]:
+            - generic "Engineering" [ref=e337]
+          - listitem [ref=e338] [cursor=pointer]:
+            - generic "Human Resources" [ref=e340]
+          - listitem [ref=e341] [cursor=pointer]:
+            - generic "Administration" [ref=e343]
+          - listitem [ref=e344] [cursor=pointer]:
+            - generic "Client Services" [ref=e346]
+          - listitem [ref=e347] [cursor=pointer]:
+            - generic "Unassigned" [ref=e349]
+      - generic [ref=e351]:
+        - generic [ref=e353]:
+          - generic [ref=e354]: 
+          - paragraph [ref=e355]: Employee Distribution by Location
+        - separator [ref=e356]
+        - list [ref=e361]:
+          - listitem [ref=e362] [cursor=pointer]:
+            - generic "Texas R&D" [ref=e364]
+          - listitem [ref=e365] [cursor=pointer]:
+            - generic "New York Sales Office" [ref=e367]
+          - listitem [ref=e368] [cursor=pointer]:
+            - generic "Unassigned" [ref=e370]
+    - generic [ref=e371]:
+      - paragraph [ref=e372]: OrangeHRM OS 5.8
+      - paragraph [ref=e373]:
+        - text: © 2005 - 2025
+        - link "OrangeHRM, Inc" [ref=e374] [cursor=pointer]:
+          - /url: http://www.orangehrm.com
+        - text: . All rights reserved.
+```
