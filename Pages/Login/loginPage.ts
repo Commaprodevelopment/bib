@@ -14,7 +14,7 @@ export class LoginPage{
       PIMMenu=()=>this.page.getByText("PIM").nth(0);
 
     public async CLickPIMMenu():Promise<void>{
-        await this.PIMMenu().click();
+        await this.PIMMenu().click({timeout:10_000});
     }
       public async navigateToLoginPage(url?: string){
         const targetUrl = url || process.env.BASE_URL || 'http://localhost:3000';

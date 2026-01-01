@@ -2,9 +2,9 @@
   "cookies": [
     {
       "name": "orangehrm",
-      "value": "bfgegeld5n64midjtuhdif9h0i",
+      "value": "55ui8s67i38l8o6po5bj3mug82",
       "domain": "opensource-demo.orangehrmlive.com",
-      "path": "/web",
+      "path": "/",
       "expires": -1,
       "httpOnly": true,
       "secure": true,

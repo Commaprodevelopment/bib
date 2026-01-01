@@ -1,6 +1,5 @@
 import {Page, Locator} from "@playwright/test";
 
-
 export class EmployeeListPage{
     private readonly page:Page;
     private employeeName: string = '';
@@ -10,12 +9,12 @@ export class EmployeeListPage{
         this.page = page;
     }
 
-    // Element locators
-    Header = () => this.page.locator('h6').filter({ hasText: 'PIM' });
-    EmployeeNameInput = () => this.page.getByPlaceholder('Type for hints...').first();
-    EmployeeIdInput = () => this.page.locator('//div//input[contains(@class,"oxd-input")]').first();
+    // Element locators - using more specific selectors
+    Header = () => this.page.getByText('Add Employee').last();
+    EmployeeNameInput = () => this.page.locator('input[placeholder="Type for hints..."]').first();
+    EmployeeIdInput = () => this.page.locator('//div//input[contains(@class,"oxd-input")]').nth(1);
     
-    // Builder methods
+    // Builder methods - synchronous for chaining
     public withEmployeeName(employeeName: string): EmployeeListPage {
         this.employeeName = employeeName;
         return this;
@@ -26,8 +25,12 @@ export class EmployeeListPage{
         return this;
     }
 
-    // Execution method
+    // Execution method - asynchronous
     public async fill(): Promise<EmployeeListPage> {
+        console.log('Filling employee details:', {
+            employeeName: this.employeeName,
+            employeeId: this.employeeId
+        });
         if (this.employeeName) {
             await this.EmployeeNameInput().fill(this.employeeName);
         }
@@ -37,18 +40,7 @@ export class EmployeeListPage{
         return this;
     }
 
-    // Alternative: Chainable fill methods
-    public async fillEmployeeName(employeeName: string): Promise<EmployeeListPage> {
-        await this.EmployeeNameInput().fill(employeeName);
-        return this;
-    }
-
-    public async fillEmployeeId(employeeId: string): Promise<EmployeeListPage> {
-        await this.EmployeeIdInput().fill(employeeId);
-        return this;
-    }
-
-    // Convenience method for backward compatibility
+    // Convenience method for quick filling
     public async fillEmployeeAllDetails(employeeName: string, employeeId: string): Promise<EmployeeListPage> {
         return this.withEmployeeName(employeeName)
                    .withEmployeeId(employeeId)
@@ -60,18 +52,9 @@ export class EmployeeListPage{
     }
 }
 
-// Usage examples:
-// Option 1: Builder pattern with chaining
+// Usage example:
 // await new EmployeeListPage(page)
 //     .withEmployeeName("John Doe")
 //     .withEmployeeId("001")
 //     .fill();
 
-// Option 2: Traditional chaining
-// await new EmployeeListPage(page)
-//     .fillEmployeeName("John Doe")
-//     .fillEmployeeId("001");
-
-// Option 3: All-in-one method (backward compatible)
-// await new EmployeeListPage(page).fillEmployeeAllDetails("John Doe", "001");
-   

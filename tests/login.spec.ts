@@ -1,6 +1,8 @@
+import { PIMAssertions } from '../Assertions/PIMAssertions';
 import { test } from '../Interfaces/IMasterSetup';
 import { LoginMaster } from '../MasterPages/LoginMaster';
 import { PimMaster } from '../MasterPages/PimMaster';
+
 
 let loginMaster: LoginMaster;
 let PIMEmployeeMaster: PimMaster;
@@ -15,12 +17,17 @@ test.describe('Login Tests', () => {
         await loginMaster.loginPage.navigateToLoginPage();
     });
 
-    test('Valid Login Test without login', async ({  }) => {
+    test('Valid Login Test without login', {tag:['@smoke','@regression']}, async ({ },testinfo) => {
+        testinfo.annotations.push({ type: 'US', description: '458985' });
+        testinfo.annotations.push({ type: 'TC', description: '129896' });
        // await loginMaster.loginPage.ClickUserProfile();
         await loginMaster.page.waitForTimeout(2000); // Just for demonstration purposes
         await loginMaster.loginPage.CLickPIMMenu();
-        await PIMEmployeeMaster.EmployeeListPage.verifyPIMPageHeader();
-        ((await PIMEmployeeMaster.EmployeeListPage.withEmployeeId('0001').withEmployeeName('Alice').fill()));
+        //await PIMEmployeeMaster.EmployeeListPage.verifyPIMPageHeader();
+        await PIMEmployeeMaster.PimAssertions.verifyEmployeeNameInputVisible();
+        await PIMEmployeeMaster.EmployeeListPage.withEmployeeId('0001').withEmployeeName('Alice').fill();
+        await PIMEmployeeMaster.page.waitForTimeout(2000); // Just for demonstration purposes
+        await PIMEmployeeMaster.PimAddEmployeePage.ClickAddEmplyeeHeader();
         await PIMEmployeeMaster.page.waitForTimeout(2000); // Just for demonstration purposes
     });
 
@@ -34,3 +41,6 @@ test.describe('Login Tests', () => {
         await loginMaster.page.waitForTimeout(2000); // Just for demonstration purposes
     });
 });
+        
+   
+
